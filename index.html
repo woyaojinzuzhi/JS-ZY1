@@ -23,9 +23,11 @@
         width: 600px;
         height: 470px;
         position: absolute;
+    }
+    #top a{
         opacity: 0;
     }
-    #top a img.xian{
+    #top a.xian{
         opacity: 1;
     }
     .left{
@@ -113,7 +115,7 @@
     var index = 0;
     var length = 8;
 
-    $('#top a img').eq(index).addClass('xian');
+    $('#top a').eq(index).addClass('xian');
     setInterval(autoMove,3000);
     function autoMove(){
         index++;
@@ -125,7 +127,7 @@
     }
 
     function changeTo(index){
-        $('#top a img').eq(index).addClass('xian').siblings().removeClass('xian');
+        $('#top a').eq(index).addClass('xian').siblings().removeClass('xian');
     }
 
     function dian(index){
